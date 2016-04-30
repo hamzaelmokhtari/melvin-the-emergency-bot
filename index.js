@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 // index
 app.get('/', function (req, res) {
-	res.send('hello world i am a secret bot')
+	res.send('Melin is ok !')
 })
 
 // for facebook verification
@@ -47,7 +47,7 @@ app.post('/webhook/', function (req, res) {
 	res.sendStatus(200)
 })
 
-var token = ""
+var token = "EAAG2ZBERfJOcBAJUerNTibcuWXz7FOEZAqVZCPmvoqr6qpc0KCjdc2qkCCkZCIX3sBN580C6BaaP1YdgKLSeKccN4EDo2qwppZAxt7k3KzYrAUdK5doC9okSqcmM8OWmhp1DhaQqd7W32LHfLOzveBOkmUek5mwXlcxyvYjafbgZDZD"
 
 function sendTextMessage(sender, text) {
 	messageData = {
