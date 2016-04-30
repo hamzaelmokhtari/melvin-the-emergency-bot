@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 // index
 app.get('/', function (req, res) {
-	res.send('Melin is ok !')
+	res.send('Melvin is ok !')
 })
 
 // for facebook verification
@@ -36,7 +36,7 @@ app.post('/webhook/', function (req, res) {
 				sendGenericMessage(sender)
 				continue
 			}
-			sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+			sendTextMessage(sender, "Bonjour, echo: " + text.substring(0, 200))
 		}
 		if (event.postback) {
 			text = JSON.stringify(event.postback)
